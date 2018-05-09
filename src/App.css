@@ -1,0 +1,228 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+* {
+  box-sizing: border-box; }
+
+body,
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  background: #f2faf3;
+  color: #a6ada7 !important;
+  font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch; }
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  max-width: none;
+  background-color: #373b44; }
+  section:nth-of-type(2n) {
+    color: #222;
+    background-color: #fe4b74;
+    height: 95vh; }
+
+.App {
+  text-align: center; }
+
+.intro {
+  /* Larger than phablet */
+  /* Larger than tablet */
+  /* Larger than desktop */
+  /* Larger than Desktop HD */
+  height: 90vh;
+  flex-direction: column; }
+  @media (min-width: 300px) {
+    .intro h1 {
+      font-size: 35px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .intro h3 {
+      font-size: 20px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 10px; } }
+  @media (min-width: 400px) {
+    .intro h1 {
+      font-size: 40px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .intro h3 {
+      font-size: 25px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 10px; } }
+  @media (min-width: 550px) {
+    .intro h1 {
+      font-size: 45px;
+      display: inline-block;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .intro h3 {
+      font-size: 25px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 10px; } }
+  @media (min-width: 750px) {
+    .intro h1 {
+      font-size: 50px;
+      display: inline-block;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .intro h3 {
+      font-size: 30px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 10px; } }
+  @media (min-width: 1000px) {
+    .intro h1 {
+      font-size: 65px;
+      display: inline-block;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .intro h3 {
+      font-size: 35px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 10px; } }
+  @media (min-width: 1200px) {
+    .intro h1 {
+      font-size: 85px;
+      display: inline-block;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .intro h3 {
+      font-size: 35px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 10px; } }
+
+@media screen and (min-width: 600px) {
+  section .container {
+    padding: 0 10px; }
+  .container {
+    padding: 0 20px; } }
+
+section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box; }
+
+.flex.row {
+  flex-direction: row; }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+@media screen and (min-width: 600px) {
+  .header {
+    font-size: 30pt; } }
+
+.header {
+  font-size: 25pt;
+  font-family: "raleway-bold";
+  position: relative;
+  color: #444649;
+  position: relative; }
+
+@media screen and (min-width: 600px) {
+  section:nth-of-type(2) .label-wrap > div {
+    padding: 0 15px; } }
+
+@media screen and (min-width: 960px) {
+  .flex.row-gt-sm {
+    flex-direction: row; } }
+
+body {
+  background-color: rgba(255, 0, 60, 0.05); }
+
+.social-container {
+  width: 40vw;
+  text-align: center; }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+.social-icons {
+  margin: 1.5em;
+  padding: 0%; }
+  .social-icons li {
+    display: inline-block;
+    position: relative;
+    margin: 0.15rem;
+    font-size: 4.5rem; }
+  .social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    transition: all 265ms ease-out; }
+  .social-icons .fa-instagram {
+    left: 20px; }
+  .social-icons .fa-github {
+    left: 16px;
+    top: 12px;
+    font-size: 5.5rem; }
+  .social-icons .fa-linkedin {
+    top: 15px;
+    left: 20px; }
+  .social-icons .fa-codepen {
+    left: 16px; }
+  .social-icons a {
+    display: inline-block; }
+    .social-icons a:before {
+      transform: scale(1);
+      content: " ";
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      display: block;
+      background: linear-gradient(45deg, #f907fc, #05d6d9, #b621fe, #1fd1f9);
+      transition: all 265ms ease-out;
+      background-size: 400% 400%;
+      animation: Gradient 5s ease infinite;
+      background-color: #f907fc; }
+    .social-icons a:hover:before {
+      transform: scale(0);
+      transition: all 265ms ease-in; }
+    .social-icons a:hover i {
+      transform: scale(1.7);
+      color: #05d6d9;
+      background: linear-gradient(45deg, #f907fc, #05d6d9, #b621fe, #1fd1f9);
+      transition: all 265ms ease-out;
+      background-size: 400% 400%;
+      animation: Gradient 5s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 265ms ease-in; }
