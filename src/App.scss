@@ -248,6 +248,7 @@ header {
   background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
   background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
   background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+  overflow: hidden;
 }
 .title {
   -webkit-align-self: center;
@@ -311,7 +312,6 @@ header {
   max-height: 50px;
   z-index: 999;
   width: 100%;
-  padding-top: 5px;
   background: none;
   overflow: hidden;
   -webkit-transition: all 0.3s;
@@ -337,7 +337,6 @@ header {
 }
 nav {
   width: 100%;
-  margin-top: 5px;
 }
 
 @media only screen and (max-width: 766px) {
@@ -362,7 +361,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-left: 35px;
-  line-height: 1.5;
+  line-height: 1;
   letter-spacing: 1px;
 }
 
@@ -378,7 +377,7 @@ nav ul li {
 }
 nav ul a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
   &:hover {
     color: #cfcfcf;
@@ -389,7 +388,7 @@ nav ul a {
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  right: 22px;
+  right: 10px;
   top: 0;
   width: 30px;
   span {
@@ -687,4 +686,12 @@ li {
   position: relative;
   margin: 0.15rem;
   font-size: 3rem;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  /* text-align: center; */
+  /* display: flex; */
+  display: block;
+  margin: auto;
 }

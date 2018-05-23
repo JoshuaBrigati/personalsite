@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import $ from "jquery";
 import { TweenMax } from "gsap";
+import Thesis from "./ThesisUI";
 
 class App extends Component {
   constructor() {
@@ -174,7 +175,7 @@ class App extends Component {
                 I am great with communication and love speaking with clients!
               </p>
               <p>
-                My Most experience is with Javascript, HTML, CSS/SCSS, ReactJS,
+                My most experience is with Javascript, HTML, CSS/SCSS, ReactJS,
                 AngularJS.
               </p>
             </div>
@@ -231,7 +232,7 @@ class App extends Component {
               </div>
               <div className="four columns">
                 <p>
-                  I also have worked with Java, C++, Python and I have made a
+                  I have also worked with Java, C++, Python and I have made a
                   small app with Swift and xCode.
                 </p>
               </div>
@@ -243,7 +244,23 @@ class App extends Component {
           <div className="container">
             <h1>Projects</h1>
             <div className="block" />
-            <div className="row">Coming Soon!</div>
+            <div className="row">
+              <div class="one-third column">
+                <a href="https://www.github.com/JoshuaBrigati/deployedCryptoUI">
+                  <Thesis />
+                </a>
+                <p>Buy and sell between all cryptocurrencies!</p>
+              </div>
+              <div class="one-third column">
+                <a href="https://www.goalposts.website">
+                  <Thesis />
+                </a>
+                <p>Keeps tack of a users goals!</p>
+              </div>
+              <div class="one-third column">
+                <Thesis />
+              </div>
+            </div>
             <div className="row" style={{ marginTop: "30px" }} />
           </div>
         </section>
