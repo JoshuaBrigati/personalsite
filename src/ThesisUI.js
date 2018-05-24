@@ -20,7 +20,7 @@ export default function ThesisUI(props) {
         type="text/css"
         dangerouslySetInnerHTML={{
           __html:
-            "\n\t.st0{fill:#F2F2F2;}\n\t.st1{fill:#4D4D4D;}\n\t.st2{fill:#4D4D4D;stroke:#E6E6E6;stroke-width:0.1;stroke-miterlimit:10;}\n\t.st3{fill:#3FA9F5;}\n\t.st4{font-family:'MyriadPro-Regular';}\n\t.st5{font-size:3px;}\n\t.st6{fill:#808080;}\n\t.st7{fill:none;}\n\t.st8{opacity:0.72;fill:#3399FF;}\n\t.st9{filter:url(#Adobe_OpacityMaskFilter);}\n\t.st10{opacity:0.75;mask:url(#SVGID_1_);}\n\t.st11{opacity:0.72;fill:#5757F7;}\n\t.st12{fill:#3399FF;}\n\t.st13{fill:none;stroke:#3FA9F5;stroke-width:0.5;stroke-miterlimit:10;}\n"
+            "\n\t.st0{fill:#F2F2F2;}\n\t.stq1{fill:#4D4D4D;}\n\t.st2{fill:#4D4D4D;stroke:#E6E6E6;stroke-width:0.1;stroke-miterlimit:10;}\n\t.st3{fill:#3FA9F5;}\n\t.st4{font-family:'MyriadPro-Regular';}\n\t.st5{font-size:3px;}\n\t.st6{fill:#808080;}\n\t.st7{fill:none;}\n\t.st8{opacity:0.72;fill:#3399FF;}\n\t.st9{filter:url(#Adobe_OpacityMaskFilter);}\n\t.st10{opacity:0.75;mask:url(#SVGID_1_);}\n\t.st11{opacity:0.72;fill:#5757F7;}\n\t.st12{fill:#3399FF;}\n\t.st13{fill:none;stroke:#3FA9F5;stroke-width:0.5;stroke-miterlimit:10;}\n"
         }}
       />
       <path
@@ -31,7 +31,7 @@ export default function ThesisUI(props) {
       <g>
         <g>
           <path
-            className="st1"
+            className="stq1"
             d="M218.8,119.3H93.2c-6.7,0-12.2-5.5-12.2-12.2V42.7c0-6.7,5.5-12.2,12.2-12.2h125.6c6.7,0,12.2,5.5,12.2,12.2
           			v64.4C231,113.8,225.5,119.3,218.8,119.3z"
           />

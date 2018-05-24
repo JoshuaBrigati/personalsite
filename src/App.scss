@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
+
 /* Base Styles
 ********************************************************************* */
 html {
   font-size: 62.5%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 body {
   font-size: 1.5em;
   line-height: 1.6;
@@ -32,7 +40,7 @@ body {
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 100%;
     padding: 0;
   }
 }
@@ -76,6 +84,7 @@ body {
     width: 65.3333333333%;
   }
   .nine.columns {
+    display: flex;
     width: 74%;
   }
   .ten.columns {
@@ -269,7 +278,6 @@ header {
 .title h1 {
   font-size: 80px;
   font-weight: 300;
-  // text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 0.85;
   margin-bottom: 28px;
@@ -472,13 +480,13 @@ nav ul a {
 ********************************************************************* */
 
 #about {
-  padding: 40px 0 100px 0;
+  padding: 60px 20px 100px 20px;
   background: white;
 }
 /* Skills Section
 ********************************************************************* */
 #skills {
-  padding: 40px 0 100px 0;
+  padding: 60px 20px 100px 20px;
   background-color: #f5f5f5;
 }
 
@@ -528,7 +536,7 @@ nav ul a {
 /* Portfolio Section
 ********************************************************************* */
 #portfolio {
-  padding: 40px 0 100px 0;
+  padding: 60px 20px 100px 20px;
   background: white;
 }
 .image {
@@ -549,7 +557,7 @@ nav ul a {
 /* Contact Section
 ********************************************************************* */
 #contact {
-  padding: 40px 0 100px 0;
+  padding: 60px 20px 100px 20px;
   background-color: #f5f5f5;
 
   input[type="email"],
@@ -605,7 +613,10 @@ nav ul a {
 ********************************************************************* */
 footer {
   min-height: 120px;
-  padding: 40px 0 40px 0;
+  padding: 10px 0 40px 0;
+  @media (min-width: 300px) {
+    padding: 0px 0 10px 0;
+  }
   background: #e55d87;
   background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
   background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
@@ -614,6 +625,7 @@ footer {
   p {
     color: #ffffff;
     margin: 20px 0 0 0;
+    padding-left: 20px;
   }
 }
 
@@ -664,6 +676,9 @@ form {
   background-size: 200% 100%;
   animation: Gradient 10s ease infinite;
 }
+.row {
+  padding: 0 20px;
+}
 @keyframes Gradient {
   0% {
     background-position: 0% 50%;
@@ -690,8 +705,101 @@ li {
 
 svg:not(:root) {
   overflow: hidden;
-  /* text-align: center; */
-  /* display: flex; */
   display: block;
   margin: auto;
+}
+
+$transitionTime: 265ms;
+$iconColor: #ff003c;
+
+.social-container {
+  //width: 370px;
+  text-align: center;
+}
+
+@mixin transformScale($size: 1) {
+  transform: scale($size);
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.social-icons {
+  /* margin: 1.5em; */
+  margin-bottom: 0rem;
+  display: flex;
+  height: 70px;
+  li {
+    display: inline-block;
+    position: relative;
+    margin: 0.15rem;
+    font-size: 3rem;
+  }
+  i {
+    color: #fff;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+
+    transition: all $transitionTime ease-out;
+  }
+  .fa-github {
+    font-size: 4rem;
+    left: 14px;
+    top: 13px;
+  }
+  .fa-linkedin {
+    top: 15px;
+    left: 20px;
+  }
+  .fa-codepen {
+    font-size: 3.5rem;
+    top: 14px;
+    left: 15px;
+  }
+  .fa-file-alt {
+    font-size: 3.5rem;
+    left: 20px;
+  }
+
+  a {
+    display: inline-block;
+    &:before {
+      @include transformScale();
+      content: " ";
+      width: 65px;
+      height: 65px;
+      border-radius: 100%;
+      display: block;
+      background: linear-gradient(45deg, #f907fc, #05d6d9, #b621fe, #1fd1f9);
+      transition: all $transitionTime ease-out;
+      background-size: 400% 400%;
+      animation: Gradient 5s ease infinite;
+      background-color: #f907fc;
+    }
+    &:hover:before {
+      transform: scale(0);
+      transition: all $transitionTime ease-in;
+    }
+    &:hover i {
+      @include transformScale(1.7);
+      color: #05d6d9;
+      background: linear-gradient(45deg, #f907fc, #05d6d9, #b621fe, #1fd1f9);
+      transition: all $transitionTime ease-out;
+      background-size: 400% 400%;
+      animation: Gradient 5s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all $transitionTime ease-in;
+    }
+  }
 }

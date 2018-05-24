@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#303030;}
+	.st1{fill:#375A7F;}
+	.st2{fill:none;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'MyriadPro-Regular';}
+	.st5{font-size:7px;}
+	.st6{fill:#00BC8C;}
+	.st7{font-size:4px;}
+	.st8{fill:none;stroke:#375A7F;stroke-width:0.2;stroke-miterlimit:10;}
+	.st9{font-size:3px;}
+</style>
+<g>
+	<path class="st0" d="M746.8,401.3H621.2c-6.7,0-12.2-5.5-12.2-12.2v-64.4c0-6.7,5.5-12.2,12.2-12.2h125.6c6.7,0,12.2,5.5,12.2,12.2
+		v64.4C759,395.8,753.5,401.3,746.8,401.3z"/>
+</g>
+<path class="st1" d="M757.9,330H610.1c-0.6,0-1.1-0.5-1.1-1.1v-3.8c0-7,5.7-12.7,12.7-12.7h125.9c6.3,0,11.4,5.1,11.4,11.4v5.1
+	C759,329.5,758.5,330,757.9,330z"/>
+<rect x="640" y="343" class="st1" width="89" height="14"/>
+<rect x="640" y="363" class="st1" width="89" height="14"/>
+<rect x="640.5" y="343.5" class="st0" width="88" height="7"/>
+<rect x="640.5" y="363.5" class="st0" width="88" height="7"/>
+<rect x="616" y="318" class="st2" width="39" height="8"/>
+<text transform="matrix(1 0 0 1 618.5 324)" class="st3 st4 st5">GoalPosts</text>
+<text transform="matrix(1 0 0 1 676.25 338.25)" class="st6 st4 st7">Your Goals</text>
+<path class="st8" d="M700.1,390h-32.1c-0.5,0-0.9-0.4-0.9-0.9v-4.1c0-0.5,0.4-0.9,0.9-0.9h32.1c0.5,0,0.9,0.4,0.9,0.9v4.1
+	C701,389.6,700.6,390,700.1,390z"/>
+<text transform="matrix(1 0 0 1 679.1875 387.6875)" class="st1 st4 st9">Add Goal</text>
+</svg>

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
 import $ from "jquery";
-import { TweenMax } from "gsap";
+import TweenMax from "gsap/TweenMax";
 import Thesis from "./ThesisUI";
+import GoalPosts from "./GoalPosts";
+import MVP from "./ThesisUI copy";
 
 class App extends Component {
   constructor() {
@@ -102,6 +104,11 @@ class App extends Component {
                   <li>
                     <a className="smoothscroll" href="#about">
                       About
+                    </a>
+                  </li>
+                  <li>
+                    <a className="smoothscroll" href="#skills">
+                      Skills
                     </a>
                   </li>
                   <li>
@@ -245,20 +252,47 @@ class App extends Component {
             <h1>Projects</h1>
             <div className="block" />
             <div className="row">
-              <div class="one-third column">
+              <div className="one-third column">
+                <p style={{ textAlign: "center", marginBottom: "1px" }}>
+                  Front End / UI Developer
+                </p>
                 <a href="https://www.github.com/JoshuaBrigati/deployedCryptoUI">
                   <Thesis />
                 </a>
-                <p>Buy and sell between all cryptocurrencies!</p>
+                <p style={{ textAlign: "center" }}>
+                  Buy and sell between all cryptocurrencies!
+                </p>
+                <p style={{ textAlign: "center", color: "blue" }}>
+                  ReactJS, SCSS, Jquery, SVG
+                </p>
               </div>
-              <div class="one-third column">
+              <div className="one-third column">
+                <p style={{ textAlign: "center", marginBottom: "1px" }}>
+                  Full Stack Developer
+                </p>
                 <a href="https://www.goalposts.website">
-                  <Thesis />
+                  <GoalPosts />
                 </a>
-                <p>Keeps tack of a users goals!</p>
+                <p style={{ textAlign: "center" }}>
+                  Keeps tack of a users goals!
+                </p>
+                <p style={{ textAlign: "center", color: "blue" }}>
+                  AngularJS, SCSS, Bootstrap, SQLite, NodeJS, AWS
+                </p>
               </div>
-              <div class="one-third column">
-                <Thesis />
+              <div className="one-third column">
+                <p style={{ textAlign: "center", marginBottom: "1px" }}>
+                  Full Stack Developer
+                </p>
+                <a href="https://www.github.com/JoshuaBrigati/Crypto-Display">
+                  <MVP />
+                </a>
+                <p style={{ textAlign: "center" }}>
+                  Displays selected cryptocurrencies, updated every second
+                </p>
+                <p style={{ textAlign: "center", color: "blue" }}>
+                  ReactJS, CSS, API, MongoDB, NodeJS
+                </p>
               </div>
             </div>
             <div className="row" style={{ marginTop: "30px" }} />
@@ -269,20 +303,23 @@ class App extends Component {
           <div className="container">
             <h1>Contact</h1>
             <div className="block" />
-            <form>
+            <form
+              method="POST"
+              action="https://formspree.io/brigati.joshua@gmail.com"
+            >
               <div className="row">
                 <div className="six columns">
                   <label htmlFor="exampleRecipientInput">Name</label>
-                  <input className="u-full-width" type="text" />
+                  <input name="name" className="u-full-width" type="text" />
                 </div>
                 <div className="six columns">
                   <label htmlFor="exampleEmailInput">Email</label>
-                  <input className="u-full-width" type="email" />
+                  <input name="email" className="u-full-width" type="email" />
                 </div>
               </div>
               <div className="row">
                 <label htmlFor="exampleMessage">Message</label>
-                <textarea className="u-full-width" />
+                <textarea name="message" className="u-full-width" />
                 <input
                   className="button-primary"
                   type="submit"
@@ -297,6 +334,30 @@ class App extends Component {
           <div className="container">
             <div className="nine columns">
               <p>Thanks for visiting!</p>
+              <div className="social-container">
+                <ul className="social-icons">
+                  <li>
+                    <a href="https://www.linkedin.com/in/joshuabrigati/">
+                      <i className="fa fa-linkedin" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/JoshuaBrigati/">
+                      <i className="fab fa-github" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://codepen.io/JoshuaBriagti/">
+                      <i className="fa fa-codepen" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://docs.google.com/document/d/1lYYaWtKkumMvGRiSDKPCHo4o_gauIs7l9yF3YDqxQ54/edit?usp=sharing">
+                      <i className="far fa-file-alt" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </footer>
